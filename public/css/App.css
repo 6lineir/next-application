@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "BYekan";
+  src: url("../fonts/BYekan.ttf");
+  /* IE9 Compat Modes */
+  /* src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/IRANSansWeb.woff2") format("woff2"),
+    url("../fonts/IRANSansWeb.woff") format("woff"),
+    url("../fonts/IRANSansWeb.ttf") format("truetype"); */
+  /* Safari, Android, iOS */
+}
+
+body {
+  font-family: "BYekan" !important;
+  padding-top: 3rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: grayscale;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "BYekan" !important;
+}
+.login {
+  background-color: #F2711C
+}
+.homeheader{
+  background: url("../img/slide2.png") no-repeat center;
+}
+.ui.borderless.menu {
+  background-color: #1B1C1D;
+  box-shadow: none;
+  flex-wrap: wrap;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.ui.borderless.menu .header.item {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.ui.mobile.only.grid .ui.menu .ui.vertical.menu {
+  display: none;
+  
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
+  float: unset;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .dropdown.icon:before {
+  content: "\f0d7";
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  position: static;
+  width: 100%;
+  background-color: unset;
+  border: none;
+  box-shadow: none;
+}
+
+.ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
+  margin-top: 6px;
+}
+
+.ui.container > .ui.message {
+  background-color: rga(238, 238, 238);
+  box-shadow: none;
+  padding: 5rem 4rem;
+  margin-top: 1rem;
+}
+
+.ui.message h1.ui.header {
+  font-size: 4.5rem;
+}
+
+.ui.message p.lead {
+  font-size: 1.3rem;
+  color: #333333;
+  line-height: 1.4;
+  font-weight: 300;
+}
