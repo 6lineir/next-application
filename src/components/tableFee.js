@@ -1,10 +1,10 @@
 import React from 'react'
-import { Table, Container, Image , Header} from 'semantic-ui-react'
+import { Table, Container, Image , Header, Button, Grid} from 'semantic-ui-react'
 
 
 const TableFee = () => (
-  <Container style={{ paddingTop: '20px' }}>
-      <Table color="violet" inverted celled selectable>
+  <Container style={{ paddingTop: '20px', }}>
+      <Table color="violet" inverted celled selectable textAlign="center">
         <Table.Header>
           <Table.Row >
             <Table.HeaderCell>ارز دیجیتال</Table.HeaderCell>
@@ -54,8 +54,49 @@ const TableFee = () => (
             <Table.Cell>$ 380000</Table.Cell>
             <Table.Cell>$ 375000</Table.Cell>
           </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Header as='h4' image inverted>
+              <Image src='/img/icons/bch.svg' rounded size='mini'/>
+              <Header.Content>
+                اتریوم
+              </Header.Content>
+              </Header>
+            </Table.Cell>
+            <Table.Cell>UP</Table.Cell>
+            <Table.Cell>$ 380000</Table.Cell>
+            <Table.Cell>$ 375000</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Header as='h4' image inverted>
+              <Image src='/img/icons/dash.svg' rounded size='mini'/>
+              <Header.Content>
+                اتریوم
+              </Header.Content>
+              </Header>
+            </Table.Cell>
+            <Table.Cell>UP</Table.Cell>
+            <Table.Cell>$ 380000</Table.Cell>
+            <Table.Cell>$ 375000</Table.Cell>
+          </Table.Row>
+          <Table.Row>
+            <Table.Cell>
+              <Header as='h4' image inverted>
+              <Image src='/img/icons/doge.svg' rounded size='mini'/>
+              <Header.Content>
+                اتریوم
+              </Header.Content>
+              </Header>
+            </Table.Cell>
+            <Table.Cell>UP</Table.Cell>
+            <Table.Cell>$ 380000</Table.Cell>
+            <Table.Cell>$ 375000</Table.Cell>
+          </Table.Row>
         </Table.Body>
       </Table>
+      <Grid textAlign="center">
+      <Button color="black" size="big" loading>نمایش بیشتر</Button></Grid>
 
   </Container>
 )

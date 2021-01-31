@@ -11,7 +11,7 @@ import {
     Menu,
     Message
   } from "semantic-ui-react";
-class navBar extends Component {
+class Navbar extends Component {
     state = {
       dropdownMenuStyle: {
         display: "none"
@@ -70,7 +70,7 @@ class navBar extends Component {
                 </Dropdown>
                 <Menu.Menu position="right">
                 <Link href="/login" ><Button color="violet" inverted size="mini">Login</Button></Link>
-                <Link href="/" ><Button color="orange" inverted size="mini">Singin</Button></Link>
+                <Link href="/dash" ><Button color="orange" inverted size="mini">Dashboard</Button></Link>
                 </Menu.Menu>
               </Menu>
             </Grid>
@@ -141,4 +141,4 @@ class navBar extends Component {
     }
   }
   
-export default navBar;
+export default Navbar;

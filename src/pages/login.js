@@ -11,11 +11,12 @@ const LoginForm = () => (
             <Image src='/img/321.png' /> ورود به ناحیه کاربری
           </Header>
           <Form size='large'>
-            <Segment stacked>
+            <Segment stacked inverted>
               <Form.Input fluid icon='user' iconPosition='right' placeholder='ایمیل خودرا وارد کنید' />
               <Form.Input
                 fluid
                 icon='lock'
+                
                 iconPosition='right'
                 placeholder='رمز عبور'
                 type='password'
@@ -26,7 +27,7 @@ const LoginForm = () => (
               </Button>
             </Segment>
           </Form>
-          <Message>
+          <Message color="violet">
             حساب کاربری ندارید؟ <a href='#'>ثبت نام</a>
           </Message>
         </Grid.Column>

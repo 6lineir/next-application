@@ -18,11 +18,12 @@ import {
 
 const Services = () => {
     return (
+      <Segment inverted>
     <Container style={{ padding: '20px' }}>
       <Grid stackable padded columns={3}>
         <Grid.Column >
           <Header as='h2' inverted>
-          <Icon name='chart line' />
+          <Icon name='chart line' color="violet" />
           <Header.Content>
             Trading
             <Header.Subheader>Fast asset creation</Header.Subheader>
@@ -31,7 +32,7 @@ const Services = () => {
         </Grid.Column>
         <Grid.Column >
           <Header as='h2' inverted>
-          <Icon name='credit card' />
+          <Icon name='credit card' color="olive"/>
           <Header.Content>
             Wallet Securet
             <Header.Subheader>Manage your preferences</Header.Subheader>
@@ -40,7 +41,7 @@ const Services = () => {
         </Grid.Column>
         <Grid.Column >
           <Header as='h2' inverted>
-          <Icon name='keycdn' />
+          <Icon name='keycdn' color="brown"/>
           <Header.Content>
             Security Key
             <Header.Subheader>Manage your preferences</Header.Subheader>
@@ -49,6 +50,7 @@ const Services = () => {
         </Grid.Column>
       </Grid>
     </Container>
+    </Segment>
     )
 }
 
