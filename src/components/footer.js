@@ -55,15 +55,15 @@ const fooTer = () => {
 
           <Grid.Row>
             <Grid.Column width={4} >
-              <Header as='h3' inverted>
-                  <Icon name='telegram' />
+              <Header as='h3' inverted color="blue">
+                  <Icon name='telegram'/>
                 <Header.Content>کانال تلگرام
                   <Header.Subheader>Telegram Channel</Header.Subheader>
                 </Header.Content>
               </Header>
             </Grid.Column>
             <Grid.Column width={4} >
-              <Header as='h3' inverted>
+              <Header as='h3' inverted color="violet">
                   <Icon name='instagram' />
                 <Header.Content>صفحه اینستاگرام
                   <Header.Subheader>Instagram</Header.Subheader>
@@ -71,7 +71,7 @@ const fooTer = () => {
               </Header>
             </Grid.Column>
             <Grid.Column width={4} >
-              <Header as='h3' inverted>
+              <Header as='h3' inverted color="yellow">
                   <Icon name='phone' />
                 <Header.Content>تلفن تماس
                   <Header.Subheader>Phone </Header.Subheader>
@@ -79,7 +79,7 @@ const fooTer = () => {
               </Header>
             </Grid.Column>
             <Grid.Column width={4} >
-              <Header as='h3' inverted>
+              <Header as='h3' inverted color="brown">
                   <Icon name='mail' />
                 <Header.Content>ایمیل
                   <Header.Subheader>Email</Header.Subheader>

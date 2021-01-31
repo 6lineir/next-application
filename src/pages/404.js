@@ -15,7 +15,7 @@ const Custom404 = () => {
       </Grid>
       <Grid textAlign="center">
         <Link href="/">
-        <Button size="big" color="violet">Home</Button>
+        <Button size="big" color="violet" icon="home">Home</Button>
         </Link>
         <Link href="/about">
         <Button size="big" color="orange">Call Me</Button>

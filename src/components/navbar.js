@@ -31,7 +31,7 @@ class Navbar extends Component {
   
     render() {
       return (
-        <div className="card">
+        <div className="opnav">
           <Container>
             <Grid padded  className="tablet computer only">
               <Menu  fluid inverted fixed="top" size="huge">

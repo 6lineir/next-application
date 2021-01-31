@@ -26,8 +26,9 @@ h4 {
   background-color: #F2711C
 }
 .homeheader{
-  background: url("../img/slide2.png") no-repeat center;
+  background-image: url("./../img/slide2.png") no-repeat center;
 }
+
 .ui.borderless.menu {
   background-color: #1B1C1D;
   box-shadow: none;
