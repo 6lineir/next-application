@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "BYekan";
-  src: url("../fonts/BYekan.ttf");
+  font-family: "IRANSans";
+  src: url("../fonts/IRANSans.ttf");
   /* IE9 Compat Modes */
   /* src: url("../fonts/IRANSansWeb.eot?#iefix") format("embedded-opentype"),
     url("../fonts/IRANSansWeb.woff2") format("woff2"),
@@ -11,7 +11,7 @@
 
 body {
   background-color: #19202E;
-  font-family: "BYekan" !important;
+  font-family: "IRANSans" !important;
   padding-top: 3rem;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
@@ -20,7 +20,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "BYekan" !important;
+  font-family: "IRANSans" !important;
 }
 .login {
   background-color: #F2711C
