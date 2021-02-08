@@ -10,18 +10,17 @@
 }
 
 body {
+  /* direction : rtl; */
   background-color: #19202E;
   font-family: "IRANSans" !important;
   padding-top: 3rem;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
 }
-h1,
-h2,
-h3,
-h4 {
+.ui {
   font-family: "IRANSans" !important;
 }
+
 .login {
   background-color: #F2711C
 }

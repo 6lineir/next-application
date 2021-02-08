@@ -21,7 +21,8 @@ class SideBar extends Component {
             tablet={4}
             computer={4}
             only="tablet computer"
-            id="sidebar">
+            id="sidebar"
+            textAlign="right">
                 <Menu vertical inverted fluid>
                   
                     <Menu.Item><Header as="h2" textAlign="center" inverted>
@@ -30,24 +31,24 @@ class SideBar extends Component {
                     </Header>
                     <Image src='/img/designer.svg' circular bordered size="medium"/>
                     </Menu.Item>
-                    <Menu.Item as="a">
-                    <Icon name='users' color="grey"/>
-                    Trade</Menu.Item>
+                    <Link href="/dash">
                     <Menu.Item as="a">
                     <Icon name='react' color="grey"/>
-                    Trade</Menu.Item>
+                    داشبورد</Menu.Item></Link>
                     <Menu.Item as="a">
                     <Icon name='mail' color="grey"/>
-                    Trade</Menu.Item>
+                    کیف پول</Menu.Item>
                     <Menu.Item as="a">
-                    <Icon name='send' color="grey"/>
-                    Trade</Menu.Item>
+                    <Icon name='credit card' color="grey"/>
+                    مالی</Menu.Item>
+                    <Link href="/dash/support">
                     <Menu.Item as="a">
                     <Icon name='help' color="grey"/>
-                    Reports</Menu.Item>
+                    پشتیبانی</Menu.Item></Link>
+                    <Link href="/dash/settings">
                     <Menu.Item as="a">
                     <Icon name='cogs' color="grey"/>
-                    Settings</Menu.Item>
+                    تنظیمات</Menu.Item></Link>
                     <Menu.Item >
                     <Button inverted color="green">ارز ها</Button>
                     <Button color="violet">خرید ارز</Button>
@@ -69,6 +70,7 @@ class SideBar extends Component {
                 <Menu.Item as="a"><Icon name="cog" loading circular/></Menu.Item></Link>
               </Menu>
         </Grid.Column>
+       
           </>
         )
   }
