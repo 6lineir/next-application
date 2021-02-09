@@ -25,7 +25,7 @@ class DashboardIndex extends Component {
     return(
       <>
 <NavBar />
-      <Grid padded>
+      <Grid padded >
         <Grid.Column
         tablet={12}
         computer={12}

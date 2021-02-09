@@ -9,6 +9,7 @@ import {
     Header,
     Icon,
     Image,
+    Label,
     Menu,
     Message
   } from "semantic-ui-react";
@@ -32,22 +33,15 @@ class Navbar extends Component {
   
     render() {
       return (
-        <div className="opnav">
           <Container>
-            <Grid padded  className="tablet computer only">
-              <Menu borderless fluid inverted fixed="top" size="huge">
-                <Menu.Item header >
-                  Gashnix
-                  <Image src="img/gashnix4.png" size="mini"/>
-                </Menu.Item>
-                <Link href="/">
-                <Menu.Item active color="violet" as="a">
-                  خانه
-                </Menu.Item></Link>
+            <Grid padded className="tablet computer only">
+              <Menu borderless fluid inverted fixed="top" size="small">
+                <Menu.Menu position="left">
+                  <Link href="/login" ><Button color="violet" inverted size="mini">ورود | ثبت نام</Button></Link>
+                  <Link href="/dash" ><Button color="orange" inverted size="mini">داشبورد کاربری</Button></Link>
+                </Menu.Menu>
                 <Link href="/blog">
-                <Menu.Item as="a">راهنما</Menu.Item></Link>
-                <Link href="/blog">
-                <Menu.Item as="a">پشتیبانی</Menu.Item></Link>
+                <Menu.Item as="a"  position="right">پشتیبانی</Menu.Item></Link>
                 <Link href="/about">
                 <Menu.Item active  color="orange" as="a">درباره ما</Menu.Item></Link>
                 <Dropdown item text="صفحات" as="a">
@@ -72,12 +66,21 @@ class Navbar extends Component {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Menu.Menu position="right">
-                <Link href="/login" ><Button color="violet" inverted size="mini">ورود | ثبت نام</Button></Link>
-                <Link href="/dash" ><Button color="orange" inverted size="mini">داشبورد کاربری</Button></Link>
-                </Menu.Menu>
+                <Link href="/blog">
+                <Menu.Item as="a"><Label color="red">New</Label>راهنما</Menu.Item></Link>
+                <Link href="/">
+                <Menu.Item active color="violet" as="a">
+                  خانه
+                </Menu.Item></Link>
+                <Menu.Item header position="right">
+                  Gashnix
+                  <Image src="img/gashnix4.png" size="mini"/>
+                </Menu.Item>
               </Menu>
             </Grid>
+
+
+
             <Grid padded className="mobile only">
               <Menu borderless fluid inverted fixed="top" size="huge">
                 <Menu.Item header>
@@ -107,13 +110,13 @@ class Navbar extends Component {
                   خانه
                 </Menu.Item></Link>
                 <Link href="/blog">
-                <Menu.Item as="a">راهنما</Menu.Item></Link>
+                <Menu.Item as="a"><Label color="red">New</Label>راهنما</Menu.Item></Link>
                 <Link href="/blog">
                 <Menu.Item as="a">پشتیبانی</Menu.Item></Link>
                 <Link href="/about">
                 <Menu.Item active  color="orange" as="a">درباره ما</Menu.Item></Link>
-                <Dropdown item text="Pages">
-                  <Dropdown.Menu>
+                <Dropdown item text="صفحات">
+                  <Dropdown.Menu position="right">
                     <Link href="/404">
                     <Dropdown.Item as="a">
                       Page 404
@@ -143,7 +146,6 @@ class Navbar extends Component {
             </Grid>
 
           </Container>
-        </div>
       );
     }
   }

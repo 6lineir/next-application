@@ -59,14 +59,16 @@ class SideBar extends Component {
         <Grid.Column 
             mobile={4}
             only="mobile">
-              <Menu  fluid inverted fixed="bottom" size="mini" color="orange">
-                <Link href="/">
-                <Menu.Item as="a" ><Icon name="phone" circular /></Menu.Item></Link>
+              <Menu  fluid inverted borderless fixed="bottom" size="big" color="violet">
+                <Link href="/dash/support">
+                <Menu.Item as="a"><Icon name="help" circular /></Menu.Item></Link>
                 <Link href="/about">
                 <Menu.Item as="a"><Icon name="star" circular /></Menu.Item></Link>
-                <Link href="/404">
-                <Menu.Item as="a"><Icon name="home" circular/></Menu.Item></Link>
                 <Link href="/dash">
+                <Menu.Item as="a"><Icon name="dashboard" circular/></Menu.Item></Link>
+                <Link href="/">
+                <Menu.Item as="a"><Icon name="home"  circular/></Menu.Item></Link>
+                <Link href="/dash/settings">
                 <Menu.Item as="a"><Icon name="cog" loading circular/></Menu.Item></Link>
               </Menu>
         </Grid.Column>

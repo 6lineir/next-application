@@ -13,7 +13,7 @@ body {
   /* direction : rtl; */
   background-color: #19202E;
   font-family: "IRANSans" !important;
-  padding-top: 3rem;
+  padding-top: 4rem;
   -webkit-font-smoothing: antialiased;
   -moz-font-smoothing: grayscale;
 }
@@ -23,9 +23,6 @@ body {
 
 .login {
   background-color: #F2711C
-}
-.homeheader{
-  background-image: url("./../img/slide2.png") no-repeat center;
 }
 
 .ui.borderless.menu {
@@ -40,14 +37,15 @@ body {
 .ui.borderless.menu .header.item {
   color: #ffffff;
   font-size: 18px;
-  font-weight: 400;
 }
 
 .ui.mobile.only.grid .ui.menu .ui.vertical.menu {
   display: none;
   
 }
-
+.ui.mobile.only.grid , .ui.dropdown.item{
+  text-align: right;
+}
 .ui.mobile.only.grid .ui.vertical.menu .dropdown.icon {
   float: unset;
 }
@@ -62,26 +60,9 @@ body {
   background-color: unset;
   border: none;
   box-shadow: none;
+  text-align: right;
 }
 
 .ui.mobile.only.grid .ui.vertical.menu .ui.dropdown.item .menu {
   margin-top: 6px;
-}
-
-.ui.container > .ui.message {
-  background-color: rga(238, 238, 238);
-  box-shadow: none;
-  padding: 5rem 4rem;
-  margin-top: 1rem;
-}
-
-.ui.message h1.ui.header {
-  font-size: 4.5rem;
-}
-
-.ui.message p.lead {
-  font-size: 1.3rem;
-  color: #333333;
-  line-height: 1.4;
-  font-weight: 300;
 }
