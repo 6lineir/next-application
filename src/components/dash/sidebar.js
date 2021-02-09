@@ -52,14 +52,14 @@ class SideBar extends Component {
                     <Menu.Item >
                     <Button inverted color="green">ارز ها</Button>
                     <Button color="violet">خرید ارز</Button>
-                    <Button icon="home" color="orange">فروش ارز</Button>
+                    <Button color="orange">فروش ارز</Button>
                     </Menu.Item>
                 </Menu>
         </Grid.Column>
         <Grid.Column 
             mobile={4}
             only="mobile">
-              <Menu  fluid inverted borderless fixed="bottom" size="big" color="violet">
+              <Menu  fluid inverted borderless fixed="bottom" size="huge" color="violet">
                 <Link href="/dash/support">
                 <Menu.Item as="a"><Icon name="help" circular /></Menu.Item></Link>
                 <Link href="/about">

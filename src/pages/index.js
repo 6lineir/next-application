@@ -2,6 +2,7 @@ import Link from "next/link";
 import {
   Button,
   Container,
+  Card,
   Divider,
   Grid,
   Header,
@@ -21,6 +22,8 @@ import Posts from "../components/posts";
 import Footer from "../components/footer";
 import TableFee from "../components/tableFee";
 import Services from "../components/services";
+import SellFor from "../components/systemed";
+
 
 const Home = () => {
   return (
@@ -46,6 +49,9 @@ const Home = () => {
           </Grid>
         </Segment>
 <Services />
+
+<SellFor />
+
 <TableFee />
 
 <Header as="h2" style={{ fontSize: "2em", textAlign: "center", color: "#ffffff" }}>اخرین بلاگ ها</Header>
