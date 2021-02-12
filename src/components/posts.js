@@ -16,11 +16,11 @@ const Posts = props => {
     
     return (
         <Container className="App"> 
-        <Grid stackable padded columns={3}>
+        <Grid stackable padded columns={4} textAlign="center">
                         
                         <Grid.Column >
                             <Card>
-                                <Image src="/img/321.png"  />
+                                <Image src="/img/Bitcoin-P2P.svg"  width="300px"/>
                                 <Card.Content>
                                     <Card.Header>post Title</Card.Header>
                                     <Card.Meta>
@@ -33,7 +33,7 @@ const Posts = props => {
                         </Grid.Column>
                         <Grid.Column >
                             <Card>
-                                <Image src="/img/321.png"  />
+                                <Image src="/img/Bitcoin-P2P.svg"  width="300px"/>
                                 <Card.Content>
                                     <Card.Header>post Title</Card.Header>
                                     <Card.Meta>
@@ -46,7 +46,7 @@ const Posts = props => {
                         </Grid.Column>
                         <Grid.Column >
                             <Card>
-                                <Image src="/img/321.png"  />
+                                <Image src="/img/Bitcoin-P2P.svg"  width="300px"/>
                                 <Card.Content>
                                     <Card.Header>post Title</Card.Header>
                                     <Card.Meta>
@@ -59,7 +59,7 @@ const Posts = props => {
                         </Grid.Column>
                         <Grid.Column >
                             <Card>
-                                <Image src="/img/321.png"  />
+                                <Image src="/img/Bitcoin-P2P.svg"  width="300px"/>
                                 <Card.Content>
                                     <Card.Header>post Title</Card.Header>
                                     <Card.Meta>
@@ -70,19 +70,7 @@ const Posts = props => {
                                 </Card.Content>
                             </Card>
                         </Grid.Column>
-                        <Grid.Column >
-                            <Card>
-                                <Image src="/img/321.png"  />
-                                <Card.Content>
-                                    <Card.Header>post Title</Card.Header>
-                                    <Card.Meta>
-                                        <span className='date'>Time create</span>
-                                    </Card.Meta>
-                                    <Card.Description>Body Post</Card.Description>
-                                    <Link href="/blog/[id]" ><Button size="mini" color="violet" >See Post</Button></Link>
-                                </Card.Content>
-                            </Card>
-                        </Grid.Column>
+
 
         </Grid>
        </Container>

@@ -20,16 +20,35 @@ class SellFor extends Component {
   render() {
     return (
 
-        <Segment>
-          <Grid columns={2}>
-            <Grid.Column>
-            <Card>fdfds</Card>
-            </Grid.Column>
-            <Grid.Column>
-            <Card>fdfds</Card>
-            </Grid.Column>
-          </Grid>
-        </Segment>
+<Grid columns={3} stackable padded>
+  <Grid.Column className="backed">
+    <Segment textAlign="center" >
+      <Header as="h2">
+      <Image src="/img/icons/usdt.svg" />
+        <Header.Content>مبادله ارز دیجیتال به تومان و
+        پرداخت با کلیه کارت های شتاب </Header.Content>
+      </Header>
+    </Segment>
+  </Grid.Column>
+  <Grid.Column>
+    <Segment inverted color="blue" textAlign="center">
+      <Header as="h2">
+      <Image src="/img/icons/ltc.svg"/>
+        <Header.Content>مبادله ارز دیجیتال به تومان و
+        پرداخت با کلیه کارت های شتاب </Header.Content>
+      </Header>
+    </Segment>
+  </Grid.Column>
+  <Grid.Column>
+    <Segment inverted color="green" textAlign="center">
+      <Header as="h2">
+      <Image src="/img/icons/btc.svg"/>
+        <Header.Content>مبادله ارز دیجیتال به تومان و
+        پرداخت با کلیه کارت های شتاب </Header.Content>
+      </Header>
+    </Segment>
+  </Grid.Column>
+</Grid>
 
     );
   }

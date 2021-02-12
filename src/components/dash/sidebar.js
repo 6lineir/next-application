@@ -35,9 +35,10 @@ class SideBar extends Component {
                     <Menu.Item as="a">
                     <Icon name='react' color="grey"/>
                     داشبورد</Menu.Item></Link>
+                    <Link href="/dash/wallet">
                     <Menu.Item as="a">
                     <Icon name='mail' color="grey"/>
-                    کیف پول</Menu.Item>
+                    کیف پول</Menu.Item></Link>
                     <Menu.Item as="a">
                     <Icon name='credit card' color="grey"/>
                     مالی</Menu.Item>
@@ -72,7 +73,6 @@ class SideBar extends Component {
                 <Menu.Item as="a"><Icon name="cog" loading circular/></Menu.Item></Link>
               </Menu>
         </Grid.Column>
-       
           </>
         )
   }

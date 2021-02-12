@@ -21,8 +21,13 @@ body {
   font-family: "IRANSans" !important;
 }
 
+.backed {
+  /* background-image: url("../img/slide2.png"); */
+  border-radius: 4px;
+}
+
 .login {
-  background-color: #F2711C
+  background-color: #F2711C;
 }
 
 .ui.borderless.menu {

@@ -40,11 +40,14 @@ class Navbar extends Component {
                   <Link href="/login" ><Button color="violet" inverted size="mini">ورود | ثبت نام</Button></Link>
                   <Link href="/dash" ><Button color="orange" inverted size="mini">داشبورد کاربری</Button></Link>
                 </Menu.Menu>
-                <Link href="/blog">
-                <Menu.Item as="a"  position="right">پشتیبانی</Menu.Item></Link>
+                <Link href="/contact">
+                <Menu.Item as="a"  position="right">پشتیبانی<Icon name="call" circular/></Menu.Item></Link>
+                <Link href="/helpme">
+                <Menu.Item as="a"><Label color="red" size="mini">به زودی</Label>راهنما<Icon name="help" circular/>
+                </Menu.Item></Link>
                 <Link href="/about">
-                <Menu.Item active  color="orange" as="a">درباره ما</Menu.Item></Link>
-                <Dropdown item text="صفحات" as="a">
+                <Menu.Item active  color="orange" as="a">درباره ما<Icon name="info" circular/></Menu.Item></Link>
+                <Dropdown item text="صفحات">
                   <Dropdown.Menu>
                     <Link href="/404">
                     <Dropdown.Item as="a">
@@ -66,16 +69,13 @@ class Navbar extends Component {
                     </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Link href="/blog">
-                <Menu.Item as="a"><Label color="red">New</Label>راهنما</Menu.Item></Link>
                 <Link href="/">
-                <Menu.Item active color="violet" as="a">
-                  خانه
-                </Menu.Item></Link>
+                <Menu.Item  active color="violet" as="a">خانه<Icon name="home" circular/></Menu.Item></Link>
+                <Link href="/">
                 <Menu.Item header position="right">
                   Gashnix
-                  <Image src="img/gashnix4.png" size="mini"/>
-                </Menu.Item>
+                  <Image src="/img/gashnix4.png" size="mini"/>
+                </Menu.Item></Link>
               </Menu>
             </Grid>
 
@@ -83,10 +83,11 @@ class Navbar extends Component {
 
             <Grid padded className="mobile only">
               <Menu borderless fluid inverted fixed="top" size="huge">
+              <Link href="/">
                 <Menu.Item header>
                 Gashnix
-                <Image src="img/gashnix4.png" size="mini"/>
-                </Menu.Item>
+                <Image src="/img/gashnix4.png" size="mini"/>
+                </Menu.Item></Link>
                 <Menu.Menu position="right">
                   <Menu.Item>
                     <Button
@@ -106,15 +107,13 @@ class Navbar extends Component {
                   style={this.state.dropdownMenuStyle}
                 >
                 <Link href="/">
-                <Menu.Item active color="violet" as="a">
-                  خانه
-                </Menu.Item></Link>
+                <Menu.Item active color="violet" as="a">خانه<Icon name="home" circular/></Menu.Item></Link>
                 <Link href="/blog">
-                <Menu.Item as="a"><Label color="red">New</Label>راهنما</Menu.Item></Link>
+                <Menu.Item as="a"><Label color="red">New</Label>راهنما<Icon name="help" circular/></Menu.Item></Link>
                 <Link href="/blog">
-                <Menu.Item as="a">پشتیبانی</Menu.Item></Link>
+                <Menu.Item as="a">پشتیبانی<Icon name="call" circular/></Menu.Item></Link>
                 <Link href="/about">
-                <Menu.Item active  color="orange" as="a">درباره ما</Menu.Item></Link>
+                <Menu.Item active  color="orange" as="a">درباره ما<Icon name="info" circular/></Menu.Item></Link>
                 <Dropdown item text="صفحات">
                   <Dropdown.Menu position="right">
                     <Link href="/404">
@@ -139,7 +138,7 @@ class Navbar extends Component {
                 </Dropdown>
                 <Menu.Menu position="right">
                     <Link href="/login" ><Button color="violet" inverted size="mini">ورود | ثبت نام</Button></Link>
-                <Link href="/dash" ><Button color="orange" inverted size="mini">داشبورد کاربری</Button></Link>
+                    <Link href="/dash" ><Button color="orange" inverted size="mini">داشبورد کاربری</Button></Link>
                 </Menu.Menu>
                 </Menu>
               </Menu>
